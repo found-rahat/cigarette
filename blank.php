@@ -84,8 +84,6 @@ require_once($date_time);
 
 
 
-
-
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
