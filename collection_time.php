@@ -960,7 +960,7 @@ window.print();
 
     if(isset($_POST["add_amount"])){
     $new_expence = "INSERT INTO `collect_expence`(collection_id, Amount , subject, discription, expence_user, create_time, create_date, Category)
-    values('".$openstockcollectionid."','".$Amount."','".$subject."','".$Discription."','".$myusername."','".$datetime."','".$date2."','".$product_collection."')";
+    values('".$openstockcollectionid."','".$Amount."','".$subject."','".$Discription."','Rahat','".$datetime."','".$date2."','".$product_collection."')";
     if(mysqli_query($conn, $new_expence))
     {
     echo "New Expence Updated";
