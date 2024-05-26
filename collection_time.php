@@ -947,17 +947,18 @@ window.print();
 
     }
 
-
+   
     if(isset($_POST['Amount']) || isset($_POST['subject']) || isset($_POST['Discription'])){
       $Amount = $_POST['Amount'];
       $subject = $_POST['subject'];
       $Discription = $_POST['Discription'];
+
     }
       
 
     
+    
     $product_collection = "product_collection";
-
     if(isset($_POST["add_amount"])){
     $new_expence = "INSERT INTO `collect_expence`(collection_id, Amount , subject, discription, expence_user, create_time, create_date, Category)
     values('".$openstockcollectionid."','".$Amount."','".$subject."','".$Discription."','Rahat','".$datetime."','".$date2."','".$product_collection."')";
@@ -976,7 +977,7 @@ window.print();
                         <div class="form-group row">
                             <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Amount</label>
                             <div class="col-sm-9">
-                                <input type="number" name="Amount" value="" class="form-control" id="exampleInputEmail2"
+                                <input type="number" name="Amount" class="form-control" id="exampleInputEmail2"
                                     placeholder="Amount">
                             </div>
                         </div>
@@ -984,7 +985,7 @@ window.print();
                         <div class="form-group row">
                             <label for="exampleInputEmail2" class="col-sm-3 col-form-label">subject</label>
                             <div class="col-sm-9">
-                                <input type="text" name="subject" value="" class="form-control" id="exampleInputEmail2"
+                                <input type="text" name="subject" class="form-control" id="exampleInputEmail2"
                                     placeholder="subject">
                             </div>
                         </div>
@@ -992,7 +993,7 @@ window.print();
                         <div class="form-group row">
                             <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Discription</label>
                             <div class="col-sm-9">
-                                <input type="text" name="Discription" value="" class="form-control"
+                                <input type="text" name="Discription" class="form-control"
                                     id="exampleInputEmail2" placeholder="Discription">
                             </div>
                         </div>
